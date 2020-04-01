@@ -12,6 +12,10 @@ public class UIElementCustomEditorTestObject : MonoBehaviour {
     public void Connect2() {
         Debug.Log("connect2");
     }
+    
+    public void Connect3() {
+        Debug.Log("connect3");
+    }
 
     void Start() {
         account = (int.Parse(account) + 1).ToString();

@@ -6,8 +6,9 @@
         xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
     <VisualElement class="button-container">
-        <Button name="button1" text="Connect1"/>
-        <Button name="button2" text="Connect2"/>
+        <Style src="ChildButtonsTemplate.uss" />
+        <Button name="ChildButton1" text="ChildButton1"/>
+        <Button name="ChildButton2" text="ChildButton2"/>
     </VisualElement>
 </UXML>
 

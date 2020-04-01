@@ -5,10 +5,11 @@
         xmlns:editor="UnityEditor.UIElements"
         xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
-    <Template name="buttonsTemplate" path="Assets/_UIElementsCustomEditor/Editor/ChildButtonsTemplate.uxml" />
-    <VisualElement class="button-container">
-        <Style src="UIElementCustomEditor.uss" />
-        <Instance template="buttonsTemplate" />
+    <Template name="buttonsTemplate" path="Assets/_UIElementsCustomEditor/Editor/ChildButtonsTemplate.uxml"/>
+    <VisualElement class="UIElementCustomEditor">
+        <Style src="UIElementCustomEditor.uss"/>
+        <Instance template="buttonsTemplate"/>
+        <Button name="ParentButton" text="ParentButton"/>
     </VisualElement>
 </UXML>
 

@@ -5,8 +5,6 @@ using UnityEngine.UIElements;
 
 [CustomEditor(typeof(UIElementCustomEditorTestObject))]
 public class UIElementCustomEditor : Editor {
-
-
     // エディタ拡張の場合、OnInspectorGUIではなくCreateInspectorGUIを使う
     public override VisualElement CreateInspectorGUI() {
         var root = new VisualElement();
@@ -28,22 +26,29 @@ public class UIElementCustomEditor : Editor {
         }));
 
         // カスタム用のVisualElementを追加
-        
+
         var uxmlPath = "Assets/_UIElementsCustomEditor/Editor/" + typeof(UIElementCustomEditor).Name + ".uxml";
         var uxml = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(uxmlPath);
         root.Add(uxml.CloneTree());
 
         // VisualElementのボタンイベントを追加
-        var button1 = root.Q<Button>("button1");
-        var target1 = serializedObject.targetObject as UIElementCustomEditorTestObject;
-        if (button1 != null && target1 != null) {
-            button1.clickable.clicked += target1.Connect1;
+        var target = serializedObject.targetObject as UIElementCustomEditorTestObject;
+        if (target == null)
+            return root;
+
+        var childButton1 = root.Q<Button>("ChildButton1");
+        if (childButton1 != null) {
+            childButton1.clickable.clicked += target.Connect1;
         }
 
-        var button２ = root.Q<Button>("button2");
-        var target２ = serializedObject.targetObject as UIElementCustomEditorTestObject;
-        if (button２ != null && target２ != null) {
-            button２.clickable.clicked += target２.Connect2;
+        var childButton2 = root.Q<Button>("ChildButton2");
+        if (childButton2 != null) {
+            childButton2.clickable.clicked += target.Connect2;
+        }
+        
+        var parentButton = root.Q<Button>("ParentButton");
+        if (parentButton != null) {
+            parentButton.clickable.clicked += target.Connect3;
         }
 
         return root;
