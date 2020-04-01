@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: UIElementsEditorWindowData
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _sprites: []
+  _sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -23,6 +23,6 @@ public class UIElementCustomEditorTestObject : MonoBehaviour {
     }
 
     void Update() {
-        Debug.Log(account + " " + password);
+        // Debug.Log(account + " " + password);
     }
 }

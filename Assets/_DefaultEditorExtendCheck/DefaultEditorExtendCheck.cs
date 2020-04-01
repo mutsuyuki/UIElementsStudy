@@ -75,15 +75,15 @@ public class DefaultEditorExtendCheck : MonoBehaviour {
 
     // クラス宣言の上に[ExecuteInEditMode] をつけているので、以下はEditor上でも実行される。
     void Awake() {
-        Debug.Log("Awake by DefaultEditorExtendCheck !!");
+        // Debug.Log("Awake by DefaultEditorExtendCheck !!");
     }
 
     void Start() {
-        Debug.Log("Start by DefaultEditorExtendCheck !!");
+        // Debug.Log("Start by DefaultEditorExtendCheck !!");
     }
 
     void Update() {
-        Debug.Log("Update by DefaultEditorExtendCheck !!");
+        // Debug.Log("Update by DefaultEditorExtendCheck !!");
     }
 
 
