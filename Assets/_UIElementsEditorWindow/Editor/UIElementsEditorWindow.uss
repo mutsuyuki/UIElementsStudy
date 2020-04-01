@@ -1,0 +1,50 @@
+Label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(30, 30, 30);
+    margin: 16px;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 696px; /* 100px + 200px + 300px + (16px * 6) */
+    border-top-color: #000;
+    border-top-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-width: 1px;
+}
+
+#image-container > * {
+    margin: 16px;
+}
+
+#image-test1 {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/100_100.png");
+}
+
+#image-test2 {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/200_200.png");
+}
+
+#image-test3 {
+    width: 300px;
+    height: 300px;
+    background-image: url("images/300_300.png");
+}
+
+
+#serialize-field-binder {
+    margin-top: 16px;
+    padding: 16px;
+}
+
+#serialize-field-binder *{
+    font-size:12px;
+}

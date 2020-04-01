@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+>
+    <VisualElement>
+        <Style src="UIElementsEditorWindow.uss"/>
+        <Label text="Hello World! From UXML"/>
+
+        <VisualElement name="image-container">
+            <VisualElement name="image-test1"/>
+            <VisualElement name="image-test2"/>
+            <VisualElement name="image-test3"/>
+        </VisualElement>
+
+        <VisualElement name="serialize-field-binder">
+            <Label text="ScriptableObjectのデータバインドテスト"/>
+            <editor:PropertyField binding-path="_position"/>
+            <editor:PropertyField binding-path="_sprites"/>
+        </VisualElement>
+
+    </VisualElement>
+</UXML>
