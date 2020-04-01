@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
+<UXML
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:engine="UnityEngine.UIElements"
+        xmlns="UnityEngine.UIElements"
         xmlns:editor="UnityEditor.UIElements"
         xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
-    <engine:VisualElement class="button-container">
+    <Template name="buttonsTemplate" path="Assets/_UIElementsCustomEditor/Editor/ChildButtonsTemplate.uxml" />
+    <VisualElement class="button-container">
         <Style src="UIElementCustomEditor.uss" />
-        <Template name="buttonsTemplate" path="Assets/_UIElementsCustomEditor/Editor/ChildButtonsTemplate.uxml" />
-        
         <Instance template="buttonsTemplate" />
-    </engine:VisualElement>
-</engine:UXML>
+    </VisualElement>
+</UXML>
 
 
