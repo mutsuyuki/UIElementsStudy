@@ -12,6 +12,6 @@
             <VisualElement name="logo" />
             <Button name="service-title" text="Service name"/>
         </VisualElement>
-        <Label name="user-name" text="user name"/>
+        <Button name="user-name" text="user name"/>
     </VisualElement>
 </UXML>
